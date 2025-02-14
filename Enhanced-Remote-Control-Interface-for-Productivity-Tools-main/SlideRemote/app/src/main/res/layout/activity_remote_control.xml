@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimary">
+
+    <!-- Zoom In & Zoom Out -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardZoomIn"
+            android:layout_width="95dp"
+            android:layout_height="81dp"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/colorSecondary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="71dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/zoom_in" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardZoomOut"
+            android:layout_width="95dp"
+            android:layout_height="81dp"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/colorSecondary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="58dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/zoom_out" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!-- Start & Stop -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- CardView for Stop -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/colorSecondary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_pause" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Start -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/colorSecondary"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_play" />
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <!-- Previous & Next -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardUpArrow"
+        android:layout_width="111dp"
+        android:layout_height="115dp"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@color/colorSecondary"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="10dp">
+
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="79dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/up_arrow" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Up Arrow & Down Arrow -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="113dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- CardView for Previous -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="113dp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            app:cardBackgroundColor="@color/colorSecondary"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_navigate_before" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Next -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardNext"
+            android:layout_width="wrap_content"
+            android:layout_height="113dp"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/colorSecondary"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_navigate_next" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- CardView for Up Arrow -->
+
+        <!-- CardView for Down Arrow -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDownArrow"
+            android:layout_width="123dp"
+            android:layout_height="117dp"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/colorSecondary"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="101dp"
+                android:layout_height="93dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/down_arrow" />
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+</LinearLayout>
